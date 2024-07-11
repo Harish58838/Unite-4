@@ -1,0 +1,16 @@
+import numpy as np
+
+# Station times for each line
+line1 = [5, 9, 3]
+line2 = [6, 8, 4]
+line3 = [7, 6, 5]
+
+# Transfer times between lines
+transfer_times = np.array([
+  [0, 2, 3],
+  [2, 0, 4],
+  [3, 4, 0]
+])
+
+# Dependencies between stations
+dependencies = [(0, 1), (1, 2)]
